@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Fitness Tracker</h1>
+    </header>
+    <div id="main-container">
+      <!-- Workout Log Section -->
+      <section id="workout-log">
+        <h2>Workout Log</h2>
+        <form id="workout-form">
+          <label for="activity">Activity:</label>
+          <input type="text" id="activity" name="activity" required />
+          <label for="duration">Duration (mins):</label>
+          <input type="number" id="duration" name="duration" required />
+          <button type="submit">Log Workout</button>
+        </form>
+        <div id="workout-list">
+          <!-- Logged workouts will be displayed here -->
+        </div>
+      </section>
+      <!-- Goal Setting Section -->
+      <section id="goal-setting">
+        <h2>Set Your Goals</h2>
+        <form id="goal-form">
+          <label for="goal">Your Goal:</label>
+          <input type="text" id="goal" name="goal" required />
+          <button type="submit">Set Goal</button>
+        </form>
+        <div id="goal-progress">
+          <!-- Goal progress will be displayed here -->
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
