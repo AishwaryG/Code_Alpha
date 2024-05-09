@@ -5,39 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Tracker</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awsome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <header>
+    <!-- <div class="container-fluid">
+      <img src="1.jpg" alt="mainframe" class="img-fluid" />
       <h1>Fitness Tracker</h1>
-    </header>
-    <div id="main-container">
-      <!-- Workout Log Section -->
+    </div>
+    <div id="container-fluid">
+      Workout Log Section
       <section id="workout-log">
-        <h2>Workout Log</h2>
+        <h2 class="center">Workout Log</h2>
         <form id="workout-form">
           <label for="activity">Activity:</label>
           <input type="text" id="activity" name="activity" required />
           <label for="duration">Duration (mins):</label>
           <input type="number" id="duration" name="duration" required />
-          <button type="submit">Log Workout</button>
+          <button type="submit" class="center1">Log Workout</button>
         </form>
         <div id="workout-list">
-          <!-- Logged workouts will be displayed here -->
+          Logged workouts will be displayed here
         </div>
       </section>
-      <!-- Goal Setting Section -->
+      Goal Setting Section
       <section id="goal-setting">
-        <h2>Set Your Goals</h2>
+        <h2 class="center">Set Your Goals</h2>
         <form id="goal-form">
           <label for="goal">Your Goal:</label>
           <input type="text" id="goal" name="goal" required />
-          <button type="submit">Set Goal</button>
+          <button type="submit" class="center1">Set Goal</button>
         </form>
         <div id="goal-progress">
-          <!-- Goal progress will be displayed here -->
+          Goal progress will be displayed here
         </div>
       </section>
+    </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <img src="1.jpg" alt="mainframe" class="img-fluid" />
+          <h1 class="header display-2">
+            Fitness Tracker <i class="fa-solid fa-shoe-prints"></i>
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <section id="workout-log">
+            <h2 class="center">
+              Workout Log <i class="fa-solid fa-check-to-slot"></i>
+            </h2>
+            <img
+              src="3.jpg"
+              class="img-fluid mx-auto d-block"
+              alt="mainframe"
+            />
+            <form id="workout-form">
+              <div class="row text-center m-4">
+                <label for="activity">Activity:</label>
+                <input
+                  type="text"
+                  id="activity"
+                  name="activity"
+                  class="fs-4"
+                  required
+                />
+                <label for="duration">Duration (mins):</label>
+                <input
+                  type="number"
+                  id="duration"
+                  name="duration"
+                  class="fs-4 mb-2"
+                  required
+                />
+              </div>
+              <div class="row mx-auto">
+                <button type="submit" class="btn btn-primary fs-4">
+                  Log Workout
+                </button>
+              </div>
+            </form>
+            <div id="workout-list">
+              <!-- Logged workouts will be displayed here -->
+            </div>
+          </section>
+        </div>
+        <div class="col-lg-6 col-sm-6">
+          <section id="goal-setting">
+            <h2 class="center">
+              Set Goals <i class="fa-solid fa-arrows-spin"></i>
+            </h2>
+            <img
+              src="2.jpg"
+              class="img-fluid mx-auto d-block"
+              alt="mainframe"
+            />
+            <form id="goal-form">
+              <div class="row text-center m-4">
+                <label for="goal">Your Goal:</label><br />
+
+                <input
+                  type="text"
+                  id="goal"
+                  name="goal"
+                  class="fs-4 mb-5 mt-5"
+                  required
+                />
+              </div>
+              <div class="row mx-auto pt-4">
+                <button type="submit" class="btn btn-primary fs-4">
+                  Set Your Goal
+                </button>
+              </div>
+            </form>
+            <div id="goal-progress">
+              <!-- Goal progress will be displayed here -->
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="card-footer">
+      <h2 class="text-center">Designed By Aishwary Gupta &hearts; 2024</h2>
     </div>
     <script src="script.js"></script>
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
